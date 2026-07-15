@@ -1,0 +1,76 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240">
+
+<defs>
+
+<linearGradient id="igniteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+
+<stop offset="0%" stop-color="#ff006e"></stop>
+
+<stop offset="50%" stop-color="#8b2cff"></stop>
+
+<stop offset="100%" stop-color="#00e5ff"></stop>
+
+</linearGradient>
+
+<filter id="glow">
+
+<feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+
+<feMerge>
+
+<feMergeNode in="blur"></feMergeNode>
+
+<feMergeNode in="SourceGraphic"></feMergeNode>
+
+</feMerge>
+
+</filter>
+
+</defs>
+
+<!-- Fire Icon -->
+
+<g filter="url(#glow)">
+
+<path fill="url(#igniteGradient)" d="
+M105 190
+
+C60 165 55 120 88 88
+
+C93 120 115 126 120 150
+
+C130 128 162 115 152 65
+
+C200 96 205 165 155 196
+
+C175 165 160 145 136 130
+
+C142 160 130 176 105 190
+
+Z"></path>
+
+</g>
+
+<!-- Text -->
+
+<text x="215" y="165" font-size="118" font-family="Bebas Neue,Arial" font-weight="700" letter-spacing="10" fill="url(#igniteGradient)" filter="url(#glow)">
+
+IGNITE
+
+</text>
+
+<!-- Underline -->
+
+<rect x="220" y="185" width="500" height="6" rx="3" fill="url(#igniteGradient)"></rect>
+
+<!-- Tagline -->
+
+<text x="220" y="225" font-size="28" font-family="Poppins,Arial" letter-spacing="3" fill="#ffffff">
+
+WHERE THE NIGHT COMES ALIVE
+
+</text>
+
+</svg>
